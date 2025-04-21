@@ -1,0 +1,258 @@
+---
+title: "Command List"
+sidebarTitle: "Command List"
+description: ""
+icon: "list"
+iconType: "duotone"
+---
+
+## Miscellanous
+Uncategorised or globally available commands.
+
+### `/config`
+<Card>
+  <Note>You must be an **Administrator** or the **Server Owner** to use this command.</Note>
+  Allows you to configure and set up Compass in the current server.
+  <ResponseField name="config" type="Application Command"/>
+</Card>
+
+### `/ping`
+<Card>
+  <Check>This command is **publically available**.</Check>
+  Replies with pong! See the latency of the bot.
+  <ResponseField name="ping" type="Application Command" />
+</Card>
+
+### `/help`
+<Card>
+  <Check>This command is **publically available**.</Check>
+  See important information about the bot, join the support server, and view all commands.
+  <ResponseField name="help" type="Application Command" />
+</Card>
+
+### `/botstats`
+<Card>
+  <Check>This command is **publically available**.</Check>
+  See how many members and servers compass serves, current latency, and uptime.
+  <ResponseField name="botstats" type="Application Command" />
+</Card>
+
+### `/whois`
+<Card>
+  <Check>This command is **publically available**.</Check>
+  View Discord & Compass information on another user or yourself.
+  <ResponseField name="whois" type="Application Command">
+    <Expandable title="options">
+      <ParamField path="user" type="User">
+        The user you want to get info on.
+      </ParamField>
+    </Expandable>
+  </ResponseField>
+</Card>
+
+### `/roblox`
+<Card>
+  <Check>This command is **publically available**.</Check>
+  View Discord & Compass information on another user or yourself.
+  <ResponseField name="roblox" type="Application Command">
+    <Expandable title="options">
+      <ParamField path="username" type="string" required>
+        The ROBLOX username.
+      </ParamField>
+    </Expandable>
+  </ResponseField>
+</Card>
+
+## PRC API
+Commands available with the **PRC API** plugin.
+
+### `/erlc info`
+<Card>
+  View the information of the linked private server.
+  <ResponseField name="erlc info" type="Application Command" />
+</Card>
+
+### `/erlc players`
+<Card>
+  View all players currently in the linked private server,
+  <ResponseField name="erlc info" type="Application Command" />
+</Card>
+
+### `/erlc check`
+<Card>
+  Allows you to check multiple aspects of the linked private server.
+  <ResponseField name="whois" type="Application Command">
+    <Expandable title="options">
+      <ParamField path="option" type="Private Server Aspect" required>
+        The aspect you want to check.
+      </ParamField>
+    </Expandable>
+  </ResponseField>
+</Card>
+
+### `/erlc run`
+<Card>
+  Run a command in the linked private server via Virtual Server Management
+  <ResponseField name="erlc run" type="Application Command">
+    <Expandable title="options">
+      <ParamField path="command" type="Private Server Command" required>
+        The command you want to run.
+      </ParamField>
+      <ParamField path="input" type="string" required>
+        The command input.
+      </ParamField>
+    </Expandable>
+  </ResponseField>
+</Card>
+
+### `/erlc view`
+<Card>
+  View an in-game player's information.
+  <ResponseField name="erlc view" type="Application Command">
+    <Expandable title="options">
+      <ParamField path="user" type="string" required>
+        The username of the player you wish to search.
+      </ParamField>
+    </Expandable>
+  </ResponseField>
+</Card>
+
+## Giveaways
+Commands to create and manage giveaways.
+
+### `/giveaway create`
+<Card>
+  Creates a giveaway with a duration, number of winners, and prize.
+  <ResponseField name="giveaway create" type="Application Command">
+    <Expandable title="options">
+      <ParamField path="prize" type="string" required>
+        The prize for the giveaway.
+      </ParamField>
+      <ParamField path="input" type="number" required>
+        The number of winners.
+      </ParamField>
+      <ParamField path="duration" type="Duration" required>
+        The duration of the giveaway. (e.g. `1h`, `30m`)
+      </ParamField>
+    </Expandable>
+  </ResponseField>
+</Card>
+
+
+### `/giveaway re-roll`
+<Card>
+  Re-roll the winner of an ended giveaway via it's ID.
+  <ResponseField name="giveaway re-roll" type="Application Command">
+    <Expandable title="options">
+      <ParamField path="id" type="id" required>
+        The command you want to run.
+      </ParamField>
+    </Expandable>
+  </ResponseField>
+</Card>
+
+## Staff Feedback
+Commands available with the **Staff Feedback** plugin.
+
+### `/feedback submit`
+<Card>
+  <Check>This command is **publically available**.</Check>
+  Submit feedback on a certain staff member.
+  <ResponseField name="feeback submit" type="Application Command">
+    <Expandable title="options">
+      <ParamField path="user" type="User" required>
+        The staff member to review.
+      </ParamField>
+      <ParamField path="rating" type="number" required>
+        The rating of stars.
+      </ParamField>
+      <ParamField path="feedback" type="string" required>
+        The feedback for the staff member.
+      </ParamField>
+    </Expandable>
+  </ResponseField>
+</Card>
+
+## Reduced Activity
+Commands available with the **Reduced Activity** plugin.
+
+### `/ra request`
+<Card>
+  Submit feedback on a certain staff member.
+  <ResponseField name="ra request" type="Application Command">
+    <Expandable title="options">
+      <ParamField path="duration" type="Duration" required>
+        The duration of the Reduced Activity. (e.g. `1h`, `30m`)
+      </ParamField>
+      <ParamField path="input" type="string" required>
+        The reason for reduced Activity
+      </ParamField>
+    </Expandable>
+  </ResponseField>
+</Card>
+
+## Sessions
+Commands available with the **Sessions** plugin.
+
+### `/session poll`
+<Card>
+  Initiates a session poll.
+  <ResponseField name="session poll" type="Application Command">
+    <Expandable title="options">
+      <ParamField path="votes" type="number" required>
+        The number of votes required to start a session.
+      </ParamField>
+    </Expandable>
+  </ResponseField>
+</Card>
+
+### `/session initiate`
+<Card>
+  Initiates a session.
+  <ResponseField name="session initiate" type="Application Command" />
+</Card>
+
+### `/session full`
+<Card>
+  Send the full server message.
+  <ResponseField name="session full" type="Application Command" />
+</Card>
+
+### `/session boost`
+<Card>
+  Send the server boost message..
+  <ResponseField name="session boost" type="Application Command" />
+</Card>
+
+### `/session shutdown`
+<Card>
+  Initiates a session shutdown.
+  <ResponseField name="session shutdown" type="Application Command" />
+</Card>
+
+## Shift Management
+Commands available with the **Shift Management** plugin.
+
+### `/shift manage`
+<Card>
+  Manage your shift.
+  <ResponseField name="shift manage" type="Application Command" />
+</Card>
+
+### `/shift active`
+<Card>
+  View all members currently on shift.
+  <ResponseField name="shift active" type="Application Command" />
+</Card>
+
+### `/shift leaderboard`
+<Card>
+  View the shift leaderboard.
+  <ResponseField name="shift leaderboard" type="Application Command" />
+</Card>
+
+### `/shift wipe`
+<Card>
+  Wipe all of the server's shifts.
+  <ResponseField name="shift wipe" type="Application Command" />
+</Card>

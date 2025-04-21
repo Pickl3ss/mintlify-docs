@@ -1,0 +1,97 @@
+---
+title: "Variable Reference"
+sidebarTitle: ""
+description: "Below are all the variables that you are able to input into your custom embeds. These variables are only allowed to be used in the description and avatar sections on your embeds."
+icon: "code"
+iconType: "duotone"
+---
+
+<Note>
+  All variables are case sensitive. Make sure to use the correct spelling and
+  capitalisation of letters.
+</Note>
+
+## User Variables
+
+| Variable         | Description                                                                                  |
+| ---------------- | -------------------------------------------------------------------------------------------- |
+| `{user}`         | Mention the user who trigged the command.                                                    |
+| `{user.mention}` | Mention the user who trigged the command.                                                    |
+| `{user.tag}`     | Displays the username of the user who trigged the command.                                   |
+| `{user.id}`      | Displays the id of the user who trigged the command.                                         |
+| `{user.icon}`    | Displays the avatar of the user who trigged the command. Can only be used in image sections. |
+
+## Guild Variables
+
+| Variable          | Description                                                     |
+| ----------------- | --------------------------------------------------------------- |
+| `{guild}`         | Displays the name of the guild the command was used in.         |
+| `{guild.id}`      | Displays the id of the guild the command was used in.           |
+| `{guild.owner}`   | Displays the owner of the guild the command was used in.        |
+| `{guild.members}` | Displays the member count of the guild the command was used in. |
+
+## Channel Variables
+
+| Variable            | Description                                               |
+| ------------------- | --------------------------------------------------------- |
+| `{channel}`         | Mentions the channel the command was used in.             |
+| `{channel.mention}` | Mentions the channel the command was used in.             |
+| `{channel.name}`    | Displays the name of the channel the command was used in. |
+| `{channel.id}`      | Displays the id of the channel the command was used in.   |
+
+## Time Variables
+
+<Info>
+  You can use any time format available in Timestamps. You can view a list of
+  all available formats
+  [here](https://gist.github.com/LeviSnoot/d9147767abeef2f770e9ddcd91eb85aa).
+  Append the letter of your desired format at the end of the variable. (e.g. `
+  {time.R}` for Relative Time)
+</Info>
+
+| Variable     | Description                                                                          |
+| ------------ | ------------------------------------------------------------------------------------ |
+| `{time}`     | Displays the time the command was run in the default format `11 November 2024 12:00` |
+| `{time+10h}` | Displays the time the command was run at + 10 hours `11 November 2024 22:00`         |
+
+## API Variables
+
+<Note>
+  These variables can only be used on specific embeds and if you have the API
+  module enabled and setup.
+</Note>
+
+| Variable                   | Description                                                             |
+| -------------------------- | ----------------------------------------------------------------------- |
+| `{prc.server.name}`        | Displays the name of the linked ER:LC private server.                   |
+| `{prc.server.key}`         | Displays the join code of the linked ER:LC private server.              |
+| `{prc.server.teambalance}` | Displays if team balance is enabled in the linked ER:LC private server. |
+| `{prc.queue}`              | Displays the length of the linked ER:LC private server.                 |
+
+## Session Variables
+
+| Variable             | Description                                   |
+| -------------------- | --------------------------------------------- |
+| `{session.code}`     | Displays the configured private server code.  |
+| `{session.owner}`    | Displays the configured private server owner. |
+| `{session.name}`     | Displays the configured private server name.  |
+| `{session.required}` | Displays the required votes for a session.    |
+| `{players}`          | Displays an updated in-game player count.     |
+
+<Note>
+  The player count is updated every 4 minutes and is only available on the
+  session embed.
+</Note>
+
+## Infraction Variables
+
+| Variable       | Description                                                                    |
+| -------------- | ------------------------------------------------------------------------------ |
+| `{reason}`     | Displays the reason of the infraction.                                         |
+| `{outcome}`    | Displays the result of the infraction. (e.g. warning, demotion)                |
+| `{notes}`      | Displays any notes that were appended to the infraction.                       |
+| `{appealable}` | Whether the infraction can be appealed.                                        |
+| `{id}`         | The internal ID of the infraction. Used when viewing and managing infractions. |
+| `{staff}`      | Displays an @mention of the infracted user.                                    |
+| `{staff.id}`   | Displays the Discord ID of the infracted user.                                 |
+| `{staff.tag}`  | Displays the username of the infracted user.                                   |

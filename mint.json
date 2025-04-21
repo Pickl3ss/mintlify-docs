@@ -1,0 +1,110 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "Compass Documentation",
+  "logo": {
+    "dark": "/media/brand/docs-logoDark.png",
+    "light": "/media/brand/docs-logoLight.png"
+  },
+  "favicon": "/media/brand/docs-favicon.png",
+  "colors": {
+    "primary": "#7cd9c0",
+    "light": "#89efd4",
+    "dark": "#7cd9c0"
+  },
+  "theme": "prism",
+  "background": {
+    "style": "windows"
+  },
+  "font":{
+    "headings": {
+      "family": "Geist",
+      "weight": 600
+    }
+  },
+  "modeToggle": {
+    "default": "dark"
+  },
+  "codeBlock": {
+    "mode": "auto"
+  },
+  "navigation": [
+    {
+      "group": "Quickstart",
+      "pages": [
+        "quickstart/installation",
+        "quickstart/support"
+      ]
+    },
+    {
+      "group": "Engine",
+      "pages": [
+        "engine/command-list",
+        "engine/variable-reference"
+      ]
+    }
+  ],
+  "topbarLinks": [
+    {
+      "name": "Support",
+      "url": "https://discord.gg/Mt7Bvb2c8y"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Add Compass",
+    "url": "https://discord.com/oauth2/authorize?client_id=1305462279906656267&permissions=8&integration_type=0&scope=bot+applications.commands",
+    "style": "pill",
+    "arrow": true
+  },
+  "tabs": [],
+  "anchors": [
+    {
+      "name": "Website",
+      "icon": "earth-americas",
+      "url": "https://compassbot.xyz"
+    },
+    {
+      "name": "Documentation",
+      "icon": "book-open-cover",
+      "url": "https://docs.compassbot.xyz"
+    },
+    {
+      "name": "Organisation",
+      "icon": "github",
+      "url": "https://github.com/compassdevelopment"
+    },
+    {
+      "name": "Support",
+      "icon": "discord",
+      "url": "https://discord.gg/S2NZapJhEA"
+    }
+  ],
+  "footer": {
+  "socials": { "website": "https://compassbot.xyz", "discord": "https://discord.gg/S2NZapJhEA" },
+  "links": [
+    {
+      "title": "Compass",
+      "links": [
+        { "label": "Website", "url": "https://compassbot.xyz" },
+        { "label": "Documentation", "url": "https://docs.compassbot.xyz" }
+      ]
+    },
+    {
+      "title": "Community",
+      "links": [
+        { "label": "Support Server", "url": "https://discord.gg/S2NZapJhEA" },
+        { "label": "Resources", "url": "https://discord.com/channels/1305452509212708874/1305453924777721866" },
+        { "label": "Changelog", "url": "https://discord.com/channels/1305452509212708874/1305454708521046018" },
+        { "label": "Status", "url": "https://discord.com/channels/1305452509212708874/1305454745837768735" },
+        { "label": "Support", "url": "https://discord.com/channels/1305452509212708874/1305480903748878377" }
+      ]
+    },
+    {
+      "title": "Legal",
+      "links": [
+        { "label": "Terms of Use", "url": "/legal/terms-of-use" },
+        { "label": "Privacy Policy", "url": "/legal/privacy-policy" }
+      ]
+    }
+  ]
+}
+}
